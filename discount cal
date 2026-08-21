@@ -1,0 +1,22 @@
+#Product price cal
+original_price = float(input("Please enter the price: "))
+discount_percent = float(input(" Please enter discount: "))
+discount_ammount = discount_percent / 100 * original_price
+final_price = original_price - discount_ammount
+print(f"Final price after {discount_percent}% discount:{final_price}")
+
+
+
+def prizepool():
+    if final_price > 4500:
+        print("Your total is: ", final_price)
+        print("Total_discount: ", discount_ammount)
+        gift_choice = input('WOOWWWW!!! YOU have 3 gifts to choose from please select "airpod","Trimmer" or "JBL GO 4": ')
+        print(f"your selected gift is: {gift_choice}")
+        print("Thanks for shoping with us")
+        
+    else:
+        print("Thangs for shoping with us")
+
+prizepool()
+
