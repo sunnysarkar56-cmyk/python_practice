@@ -1,0 +1,21 @@
+
+#first name last name mobile no
+first_name = input(" type your first name: ")
+last_name = input("type your last name: ")
+mobile_no = (input("Enter your mobile no: "))
+full_details = (f"{first_name}   {last_name}   {mobile_no}")
+
+print(full_details)
+
+def welcome(mobile_no):
+    """Validate and report whether a mobile number has exactly 10 digits."""
+    if not mobile_no.isdigit() or len(mobile_no) != 10:
+        print("Error: it must be 10 digits")
+        return False
+    
+
+    print("Welcome to my domain")
+    return True
+
+
+welcome(mobile_no)
